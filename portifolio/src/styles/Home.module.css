@@ -1,0 +1,171 @@
+.introducao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 180px 0;
+}
+
+.introducaoTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.introducaoTexto h1 {
+    margin-bottom: 5px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo h2 {
+    white-space: nowrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.cardHome {
+    width: 200px;
+    height: 150px;
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.cardHome h5 {
+    color: white;
+}
+
+.button {
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    background-color: #9750c3;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #743a97;
+    color: white;
+}
+
+.foto {
+    border-radius: 100%;
+}
+
+.cardBody a {
+    font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo h2 {
+        font-size: 22px;
+    }
+
+    .cards {
+        gap: 50px;
+    }
+
+    .cardHome {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cardHome h5 {
+        font-size: 19px;
+        margin-top: 0;
+    }
+
+    .button {
+        height: 25px;
+    }
+
+    .introducao {
+        flex-direction: column;
+    }
+
+    .introducaoTexto {
+        margin: 0;
+    }
+
+    .introducaoTexto h1 {
+        font-size: 30px;
+    }
+
+    .introducaoTexto h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .introducao {
+        flex-direction: column;
+    }
+
+    .introducaoTexto {
+        margin: 0;
+    }
+
+    .introducaoTexto h1 {
+        font-size: 30px;
+    }
+
+    .introducaoTexto h2 {
+        font-size: 15px;
+    }
+
+    .conteudo h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .introducao {
+        flex-direction: column;
+    }
+
+    .introducaoTexto h1 {
+        font-size: 35px;
+    }
+
+    .introducaoTexto h2 {
+        font-size: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .introducaoTexto h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .introducaoTexto h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #2A3055 !important;
+    color: white !important;
+    font-family: 'Inconsolata' !important;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4, h5 {
+    font-weight: 800;
+}
+
+hr {
+    all: unset;
+    border: 2px solid #ffff;
+    margin: 0 20px;
+    width: 100%;
+}
+
+.header {
+    background-color: #9750c3;
+    padding: 10px 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.imgHeader {
+    width: 100px;
+    height: 80px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.links a:hover {
+    background-color: #743a97;
+}
+
+.footer {
+    background-color: #9750c3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    align-items: center;
+}
+
+.imgFooter {
+    width: 60px;
+    height: 60px;
+}
+
+.logoTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoTexto img {
+    width: 90px;
+    height: 90px;
+}
+
+.logoTexto p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.contato {
+    display: flex;
+    gap: 15px;
+}
+
+.contato img {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .imgHeader {
+        width: 80px;
+        height: 70px;
+    }
+
+    .links {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .links a {
+        padding: 10px 0;
+    }
+
+    .imgFooter {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logoTexto img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .links a {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .links {
+        gap: 0;
+    }
+
+    .links a {
+        font-weight: 600;
+    }
+
+    .links a:hover {
+        padding: 10px;
+    }
+
+    .imgFooter {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logoTexto img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .links {
+        gap: 0;
+    }
+
+    .links a {
+        font-weight: 600;
+    }
+
+    .links a:hover {
+        padding: 10px;
+    }
+
+    .imgFooter {
+        width: 50px;
+        height: 50px;
+    }
+}
